@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>文組也能讀 AI 碩士｜歐洲與日本學程 × 獎學金（政大獎學金工作坊）</title>
+<meta name="description" content="政大獎學金工作坊：歐洲與日本較少人知道的 AI 相關碩士學程，以及台灣學生可申的獎學金。資料查證 2026-11-24。">
+<meta name="theme-color" content="#0b1020">
+<style>*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0b1020;overflow:hidden}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei","Heiti TC","Noto Sans CJK TC",system-ui,sans-serif;color:#0f172a;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+a{color:inherit}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#stage{width:1600px;height:900px;position:relative;flex:none;transform-origin:center center;background:#f8fafc;box-shadow:0 20px 80px rgba(0,0,0,.5);overflow:hidden}
+.slide{position:absolute;inset:0;padding:64px 80px 70px;display:none;flex-direction:column;background:#f8fafc}
+.slide.active{display:flex;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+:root{--eu:#2563eb;--hum:#7c3aed;--x:#0d9488;--jp:#dc2626;--sch:#d97706;--ink:#0f172a;--mute:#475569;--line:#e2e8f0}
+.kicker{font-size:22px;font-weight:700;letter-spacing:.08em;color:var(--c,#2563eb);margin-bottom:10px;display:flex;align-items:center;gap:12px}
+.kicker:before{content:"";width:34px;height:6px;border-radius:3px;background:var(--c,#2563eb)}
+h1{font-size:76px;line-height:1.15;font-weight:900;letter-spacing:.01em}
+h2{font-size:48px;line-height:1.2;font-weight:900;margin-bottom:26px}
+h3{font-size:28px;font-weight:800;line-height:1.3}
+p,li{font-size:25px;line-height:1.55}
+.mute{color:var(--mute)}
+.small{font-size:19px}
+.grid{display:grid;gap:22px;flex:1;min-height:0}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 26px;box-shadow:0 2px 10px rgba(15,23,42,.05);min-height:0}
+.box h3{margin-bottom:10px}
+.box ul{padding-left:1.1em}.box li{margin:4px 0;font-size:22px}
+/* dark slides */
+.dark{background:radial-gradient(circle at 80% 20%,#1e3a8a 0,#0b1020 60%);color:#fff}
+.dark .mute{color:#cbd5e1}
+.title-slide{justify-content:center}
+.title-slide h1{font-size:84px;margin:18px 0 26px}
+.title-slide .sub{font-size:32px;color:#cbd5e1;line-height:1.5}
+.presenter{margin-top:56px;display:flex;gap:24px;align-items:center}
+.presenter .av{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:900}
+.presenter b{font-size:32px;display:block}.presenter span{font-size:22px;color:#cbd5e1}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.chip{font-size:20px;padding:8px 18px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25)}
+.divider{justify-content:center;color:#fff;background:var(--c)}
+.divider .num{font-size:160px;font-weight:900;opacity:.25;line-height:1}
+.divider h1{font-size:88px;margin:6px 0 22px}
+.divider p{font-size:30px;max-width:1250px;opacity:.95}
+.divider .kicker{color:#fff}.divider .kicker:before{background:#fff}
+.divider .pill{display:inline-block;margin-top:34px;font-size:24px;padding:12px 24px;border-radius:14px;background:rgba(0,0,0,.18)}
+/* program cards */
+.card{background:#fff;border:1px solid var(--line);border-top:8px solid var(--c);border-radius:18px;padding:22px 26px 20px;display:flex;flex-direction:column;min-height:0;box-shadow:0 3px 14px rgba(15,23,42,.06)}
+.card .school{font-size:19px;color:var(--mute);font-weight:600;margin-bottom:4px}
+.card h3{font-size:30px;margin-bottom:12px}
+.g3 .card h3{font-size:25px}
+.row{display:grid;grid-template-columns:118px 1fr;gap:10px;padding:8px 0;border-top:1px dashed var(--line);font-size:21px;line-height:1.45}
+.g3 .row{grid-template-columns:78px 1fr;font-size:18.5px;padding:6px 0}
+.row .k{font-weight:800;color:var(--c)}
+.card .link{margin-top:auto;padding-top:10px;font-size:18px;word-break:break-all}
+.card .link a{color:var(--c);font-weight:700;text-decoration:none;border-bottom:2px solid currentColor}
+.tbc{display:inline-block;font-size:.8em;font-weight:800;color:#b45309;background:#fef3c7;border:1px solid #fcd34d;border-radius:6px;padding:0 6px;margin:0 2px;white-space:nowrap}
+.hot{display:inline-block;font-size:.8em;font-weight:800;color:#fff;background:#dc2626;border-radius:6px;padding:0 7px;margin-right:4px;white-space:nowrap}
+.closed{display:inline-block;font-size:.8em;font-weight:800;color:#475569;background:#e2e8f0;border-radius:6px;padding:0 7px;white-space:nowrap}
+.note{margin-top:16px;font-size:19px;color:var(--mute);background:#fff;border-left:6px solid var(--c);padding:10px 16px;border-radius:8px}
+/* big numbers */
+.bign{display:flex;gap:22px;margin-bottom:22px}
+.bign .n{flex:1;background:#0f172a;color:#fff;border-radius:18px;padding:18px 24px}
+.bign .n b{font-size:64px;font-weight:900;color:#93c5fd;line-height:1.05;display:block}
+.bign .n span{font-size:21px;color:#cbd5e1}
+/* table */
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(15,23,42,.05)}
+th,td{text-align:left;padding:11px 14px;font-size:19.5px;line-height:1.4;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#0f172a;color:#fff;font-size:19px}
+td:first-child{font-weight:800;white-space:nowrap}
+tr.dim td{color:#64748b;background:#f8fafc}
+/* routes */
+.route{border-radius:20px;padding:26px;color:#fff;display:flex;flex-direction:column;gap:10px}
+.route .rn{font-size:20px;font-weight:800;opacity:.85}
+.route h3{font-size:32px}
+.route p{font-size:21px;line-height:1.5;opacity:.95}
+.route .ex{margin-top:auto;font-size:18px;background:rgba(0,0,0,.18);border-radius:10px;padding:10px 12px;line-height:1.5}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;flex:1;min-height:0}
+.tl .col{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;min-height:0}
+.tl .col h3{font-size:26px;margin-bottom:6px}
+.ev{display:grid;grid-template-columns:86px 1fr;gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:17.5px;line-height:1.38}
+.ev .d{font-weight:900;color:#0f172a}
+.ev.u{background:#fef2f2;margin:0 -10px;padding:6px 10px;border-radius:8px;border-top-color:transparent}
+.ev.u .d{color:#dc2626}
+.ev .t{display:inline-block;font-size:13px;font-weight:800;border-radius:4px;padding:0 5px;margin-right:4px;color:#fff;vertical-align:2px}
+.t.eu{background:var(--eu)}.t.hum{background:var(--hum)}.t.x{background:var(--x)}.t.jp{background:var(--jp)}.t.sch{background:var(--sch)}
+.legend{display:flex;gap:18px;font-size:17px;color:var(--mute);margin-top:10px;flex-wrap:wrap}
+/* checklist */
+.ck li{list-style:none;position:relative;padding-left:40px;font-size:22px;margin:7px 0}
+.ck li:before{content:"";position:absolute;left:0;top:6px;width:24px;height:24px;border:3px solid var(--c);border-radius:6px}
+/* chrome */
+#bar{position:fixed;top:0;left:0;height:5px;background:linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6);z-index:20;transition:width .3s}
+#hud{position:fixed;right:14px;bottom:12px;z-index:20;display:flex;gap:8px;align-items:center;font-size:15px;color:#e2e8f0}
+#hud button{background:rgba(15,23,42,.7);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:10px;width:42px;height:38px;font-size:18px;cursor:pointer}
+#count{background:rgba(15,23,42,.7);border:1px solid rgba(255,255,255,.25);padding:8px 12px;border-radius:10px;font-variant-numeric:tabular-nums}
+.foot{position:absolute;left:80px;right:80px;bottom:24px;display:flex;justify-content:space-between;font-size:16px;color:#94a3b8;pointer-events:none}
+.dark .foot,.divider .foot{color:rgba(255,255,255,.6)}
+/* mobile reflow mode */
+html.m #viewport{display:block}
+html.m #stage{width:100vw;height:100%;transform:none!important;box-shadow:none}
+html.m .slide{padding:26px 18px 90px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+html.m .slide.active{display:block}
+html.m .grid,html.m .tl,html.m .bign{display:flex;flex-direction:column;gap:14px}
+html.m h1,html.m .title-slide h1{font-size:38px}
+html.m .divider h1{font-size:44px}
+html.m .divider .num{font-size:90px}
+html.m .divider p,html.m .title-slide .sub{font-size:19px}
+html.m h2{font-size:28px;margin-bottom:16px}
+html.m h3,html.m .card h3,html.m .g3 .card h3,html.m .route h3{font-size:22px}
+html.m p,html.m li,html.m .box li,html.m .ck li{font-size:16.5px}
+html.m .row,html.m .g3 .row{font-size:15.5px;grid-template-columns:64px 1fr}
+html.m .kicker{font-size:15px}
+html.m th,html.m td{font-size:14px;padding:8px}
+html.m td:first-child{white-space:normal}
+html.m .tablewrap{overflow-x:auto}
+html.m .ev{font-size:15px;grid-template-columns:70px 1fr}
+html.m .route p,html.m .route .ex,html.m .note,html.m .small,html.m .card .link{font-size:15px}
+html.m .bign .n b{font-size:40px}
+html.m .foot{display:none}
+html.m .title-slide,html.m .divider{display:none}
+html.m .title-slide.active,html.m .divider.active{display:flex;justify-content:center}
+html.m .presenter{margin-top:28px}
+html.m .chip{font-size:14px}
+@media print{#hud,#bar{display:none}}
+.tight .card{padding:14px 22px 12px}.tight .card h3{font-size:24px;margin-bottom:4px}.tight .row{font-size:18px;padding:4px 0}.tight .card .link{padding-top:4px;font-size:16px}
+html.m #hud{opacity:.85}
+</style></head><body>
+<div id="bar"></div>
+<div id="viewport"><div id="stage">
+<section class="slide dark title-slide" data-sec="開場"><div class="kicker" style="--c:#93c5fd">政大獎學金工作坊 ・ 2026 年 11 月</div>
+<h1>文組也能讀 AI 碩士<br>歐洲與日本的冷門好學程 ＋ 獎學金</h1>
+<div class="sub">歐盟聯合碩士、文組名校的 AI／數位碩士、跨領域 AI，以及日本人間社會情報・情報學環<br>2027 年入學申請時程與台灣學生可申的獎學金</div>
+<div class="presenter"><div class="av">何</div><div><b>何則文</b><span>政大日文系 ・ AI／數位創新專案</span></div></div>
+<div class="chips"><span class="chip">資料查證：2026/11/24（台北時間）各校官網</span><span class="chip">金額與截止以官網最新公告為準</span></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 開場</span></div></section>
+<section class="slide " data-sec="趨勢"><div class="kicker">為什麼是現在</div><h2>AI 治理與應用，正在變成歐洲的新人才缺口</h2>
+<div class="bign"><div class="n"><b>19</b><span>座 EU AI Factories 建置中</span></div><div class="n"><b>13</b><span>座 AI Factory Antennas</span></div><div class="n"><b>最多 7</b><span>座 AI Gigafactories 招標中（EuroHPC）</span></div></div>
+<div class="grid g3">
+<div class="box"><h3>歐盟 AI 法（AI Act）</h3><p class="small">推動「可信賴 AI、治理、倫理與法規」人才需求。牛津 Law, Governance and AI、EMILDAI、劍橋 Ethics of AI 都屬這條線。</p></div>
+<div class="box"><h3>AI＋商管／應用學程增加</h3><p class="small">AI 加商管、金融科技、人機互動與生成式 AI 應用的學程變多，不一定要先有資工學士。AI Factories 的應用重點：金融、製造、醫療、公部門。</p></div>
+<div class="box"><h3>跨領域的差異化</h3><p class="small">能把 AI 方法落到業務、合規與產品的人仍然搶手；純技術研發職缺仍偏向有實作能力者。能講清楚 AI 法、風險管理與業務應用的跨領域畢業生，較有優勢。</p></div>
+</div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 趨勢</span></div></section>
+<section class="slide " data-sec="趨勢"><div class="kicker">畢業之後</div><h2>讀完能不能留下來工作？各國畢業後居留</h2>
+<div class="tablewrap"><table><tr><th>國家</th><th>畢業後居留</th><th>補充</th></tr>
+<tr><td>英國 Graduate visa</td><td>2027/1/1 起提出申請者：<b>18 個月</b></td><td>2026/12/31 前申請者為 2 年；申請費 £937，另加每年通常 £1,035 的 healthcare surcharge</td></tr>
+<tr><td>愛爾蘭</td><td>Level 9 畢業生 Third Level Graduate Programme：最長 <b>24 個月</b></td><td>EMILDAI 主辦校 DCU 在愛爾蘭</td></tr>
+<tr><td>德國</td><td>就業居留證通常最長 <b>18 個月</b></td><td>TUM、Hertie 等</td></tr>
+<tr><td>法國</td><td>就業／創業居留證通常 <b>1 年</b></td><td>Sciences Po、Eiffel 路線</td></tr>
+</table></div>
+<div class="note" style="--c:var(--sch)">各國細則常改，申請簽證前請再查當地移民機關。英國：gov.uk/graduate-visa</div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 趨勢</span></div></section>
+<section class="slide " data-sec="導覽"><div class="kicker">怎麼看這份簡報</div><h2>三條歐洲路線＋日本，先找到你的入口</h2>
+<div class="grid g4">
+<div class="route" style="background:var(--eu)"><div class="rn">路線 1</div><h3>歐盟聯合碩士<br>Erasmus Mundus</h3><p>兩年、跨 2–3 國就讀。全額獎＝免學費＋每月 €1,400、最長 24 個月。</p><div class="ex">AISS・EMILDAI・Mundus Journalism・MULTICOM</div></div>
+<div class="route" style="background:var(--hum)"><div class="rn">路線 2</div><h3>文組名校的<br>AI／數位碩士</h3><p>政策、媒體、社會科學角度讀 AI。英國多為一年制，自費為主，搭配校內獎、Chevening、Eiffel。</p><div class="ex">Sciences Po・SOAS・LSE・Oxford OII・KCL・UCL・Hertie・Leiden</div></div>
+<div class="route" style="background:var(--x)"><div class="rn">路線 3</div><h3>跨領域 AI<br>（科技與社會／商管）</h3><p>歡迎社科、人文、商管背景，學費相對可控，部分有校內全額獎。</p><div class="ex">TUM RESET・TUM AI in Society・愛丁堡・CBS・Tilburg</div></div>
+<div class="route" style="background:var(--jp)"><div class="rn">日本</div><h3>人間社會情報<br>・情報學環</h3><p>文理融合的資訊學，日語或英語授課。國立大學學費年額 535,800 日圓（標準額）。</p><div class="ex">東大・東北・京大・名大・筑波・慶應・一橋・東京科學大・滋賀</div></div>
+</div>
+<p class="small mute" style="margin-top:16px">每張學程卡都有：<b>適合</b>（為何適合政大學生）・<b>資助</b>・<b>學費</b>（非歐盟）・<b>2027 截止</b>・官網連結。標示 <span class="tbc">待確認</span> 的是官網未能直接讀到或可能變動的數字。</p><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 導覽</span></div></section>
+<section class="slide " style="--c:var(--sch)" data-sec="導覽"><div class="kicker" style="--c:var(--sch)">先知道的現況</div><h2>三件先講清楚的事，避免白忙</h2>
+<div class="grid g3">
+<div class="box"><h3>① EMAI 這屆沒有全額獎</h3><p class="small">EMAI（歐盟聯合 AI 碩士）2027–2029 屆不發 Erasmus Mundus 獎學金，只收自費生（每年 €9,000）。也因此不符合教育部歐盟獎學金。</p></div>
+<div class="box"><h3>② 有些學程停了或換名</h3><p class="small">LCT（語言與溝通科技）已停招，目前沒有接續計畫。BDMA 已結束，由 DEAI 接續。EMAI、DEAI 偏資工，不適合當文組主打。</p></div>
+<div class="box"><h3>③ 技術向碩士看數學與程式學分</h3><p class="small">多數頂尖技術 AI 碩士要求數學與程式學分。文組背景應優先看治理、商業應用與跨領域學程；若想走技術向，可把目標放在 2028 年入學，先補微積分、線性代數、機率統計與 Python。</p></div>
+</div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 導覽</span></div></section>
+<section class="slide divider" style="--c:var(--eu)" data-sec="歐盟聯合碩士"><div class="kicker">路線 1</div><div class="num">01</div><h1>歐盟聯合碩士（EMJM）</h1>
+<p>兩年、多國聯合學位。標準 Erasmus Mundus 全額獎學金：<b>免學費＋每月 €1,400，最長 24 個月</b>，並涵蓋保險。台灣學生可申；是否發放以各計畫當屆為準。</p>
+<span class="pill">官方目錄：eacea.ec.europa.eu → Erasmus Mundus Catalogue（申請多數落在 10 月至次年 1 月）</span><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 歐盟聯合碩士</span></div></section>
+<section class="slide " style="--c:var(--eu)" data-sec="歐盟聯合碩士"><div class="kicker">路線 1 ・ 歐盟聯合碩士</div><h2>AI × 永續、AI × 法律：全額獎還在的兩個計畫</h2><div class="grid g2"><div class="card"><div class="school">塔林大學（愛沙尼亞）・葡萄牙 Lusófona・芬蘭 Tampere</div><h3>AISS：AI for Sustainable Societies</h3><div class="row"><div class="k">適合</div><div>AI、永續與參與式設計；明確歡迎跨領域，含社會科學、人文與設計背景</div></div><div class="row"><div class="k">資助</div><div>2027 屆 <b>10 個 EM 全額獎</b>（免學費＋每月 €1,400）</div></div><div class="row"><div class="k">學費</div><div>自費每學期 €2,000，兩年 €8,000</div></div><div class="row"><div class="k">2027 截止</div><div>2026/12/2 開放 → <b>2027/2/2</b></div></div><div class="link">官網 → <a href="https://aissprogram.eu/" target="_blank" rel="noopener">aissprogram.eu</a></div></div><div class="card"><div class="school">都柏林城市大學 DCU 主辦・Avignon・Erasmus Rotterdam・León・比薩・巴西 FGV Rio Law</div><h3>EMILDAI：Law, Data and AI</h3><div class="row"><div class="k">適合</div><div>法律、資料治理、資安、基本權利與 AI 監管；貼法律、政治背景</div></div><div class="row"><div class="k">資助</div><div>最多 <b>12 個全額 EM 獎</b>＋6 個全額免學費＋4 個部分免學費（取 25 人）</div></div><div class="row"><div class="k">學費</div><div>非歐盟 €20,919／年</div></div><div class="row"><div class="k">2027 截止</div><div>獎學金輪 2026/11/16 → <b>2027/1/17</b>；自費第二輪 3/21–5/28</div></div><div class="row"><div class="k">注意</div><div>學歷門檻嚴：計算學群要資工或至少三門計算課；法律學群要法律學位，或至少 30 ECTS 法律＋9 ECTS 經濟。先寫信 info-emildai@dcu.ie 確認</div></div><div class="link">官網 → <a href="https://emildai.eu/" target="_blank" rel="noopener">emildai.eu</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 歐盟聯合碩士</span></div></section>
+<section class="slide " style="--c:var(--eu)" data-sec="歐盟聯合碩士"><div class="kicker">路線 1 ・ 歐盟聯合碩士</div><h2>傳播與語文背景的兩個全額獎入口</h2><div class="grid g2"><div class="card"><div class="school">Aarhus・阿姆斯特丹・倫敦・慕尼黑・布拉格</div><h3>Mundus Journalism</h3><div class="row"><div class="k">適合</div><div>新聞、媒體與全球化；偏好有新聞或媒體經驗</div></div><div class="row"><div class="k">資助</div><div>每屆約 <b>10–15 個 EM 全額獎</b>；已取得兩年制碩士者通常不能領</div></div><div class="row"><div class="k">學費</div><div>第一年 €9,000，第二年 €12,000</div></div><div class="row"><div class="k">2027 截止</div><div><b>2027/1/10</b> 13:00 CET（台北 20:00）</div></div><div class="link">官網 → <a href="https://mundusjournalism.com/" target="_blank" rel="noopener">mundusjournalism.com</a></div></div><div class="card"><div class="school">西班牙 Murcia・瑞典隆德・德國 FAU</div><h3>MULTICOM：多模態人類溝通資料科學</h3><div class="row"><div class="k">適合</div><div>語言、認知與 AI；最貼政大語文科系背景</div></div><div class="row"><div class="k">資助</div><div>每屆 <b>10–15 個 EM 全額獎</b>，另有亞洲區額外名額</div></div><div class="row"><div class="k">學費</div><div>官網估算每年 €17,000（兩年 €34,000）</div></div><div class="row"><div class="k">2027 截止</div><div>公開資訊為 2026/11/1 → <b>2027/2/12</b> <span class="tbc">待確認</span></div></div><div class="row"><div class="k">注意</div><div>查證時 admissions 頁面為 404，截止請再對官網 <span class="tbc">待確認</span></div></div><div class="link">官網 → <a href="https://multicom-em.eu/" target="_blank" rel="noopener">multicom-em.eu</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 歐盟聯合碩士</span></div></section>
+<section class="slide divider" style="--c:var(--hum)" data-sec="文組名校"><div class="kicker">路線 2</div><div class="num">02</div><h1>文組名校的 AI／數位碩士</h1>
+<p>從政策、媒體、社會科學讀 AI，多數不要求資工先修。英國多為一年制、以自費為主；資金靠校內獎、Chevening（下一輪）或法國 Eiffel。</p>
+<span class="pill">Sciences Po ・ SOAS ・ LSE ・ 牛津 OII ・ KCL ・ UCL STEaPP ・ Hertie ・ 萊頓</span><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 文組名校</span></div></section>
+<section class="slide " style="--c:var(--hum)" data-sec="文組名校"><div class="kicker">路線 2 ・ 文組名校</div><h2>不要求技術先修：巴黎政治學院與 SOAS</h2><div class="grid g2"><div class="card"><div class="school">巴黎政治學院 Sciences Po（台灣常稱巴黎政大）・法國</div><h3>Digital, New Technology and Public Policy</h3><div class="row"><div class="k">適合</div><div>官網明寫不要求技術先修；數位政策、AI 與公共部門</div></div><div class="row"><div class="k">資助</div><div>可經學校提報法國 <b>Eiffel</b>；校內亦有獎助</div></div><div class="row"><div class="k">學費</div><div>2026–27 非歐經區稅務居民碩士每年 €20,640；2027–28 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>國際申請 <b>2027/2/21</b> 23:59 巴黎時間（台北 2/22 06:59）</div></div><div class="link">官網 → <a href="https://www.sciencespo.fr/ecole-affaires-publiques/en/academics/masters/policy-streams/digital-new-technology-public-policy/" target="_blank" rel="noopener">www.sciencespo.fr/ecole-affaires-publiques/en/academics/…</a></div></div><div class="card"><div class="school">倫敦 SOAS・英國</div><h3>MSc AI and Sustainability</h3><div class="row"><div class="k">適合</div><div>任何學科 2:2 即可，不要求已有強資料科學背景；AI 與永續、南半球視角</div></div><div class="row"><div class="k">資助</div><div>校內獎；Chevening 2027–28 已關，看下一輪</div></div><div class="row"><div class="k">學費</div><div>國際生 £26,330（1 年）</div></div><div class="row"><div class="k">2027 截止</div><div>SOAS 碩士通常為 2027/7/31，宜早送</div></div><div class="link">官網 → <a href="https://www.soas.ac.uk/study/find-course/msc-artificial-intelligence-and-sustainability" target="_blank" rel="noopener">www.soas.ac.uk/study/find-course/msc-artificial-intellig…</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 文組名校</span></div></section>
+<section class="slide " style="--c:var(--hum)" data-sec="文組名校"><div class="kicker">路線 2 ・ 文組名校</div><h2>媒體、網路與社會：LSE 與牛津 OII</h2><div class="grid g2"><div class="card"><div class="school">倫敦政經學院 LSE・英國</div><h3>MSc Media and Communications (Data and Society)</h3><div class="row"><div class="k">適合</div><div>媒體、資料與社會；貼社會科學與傳播背景</div></div><div class="row"><div class="k">資助</div><div>LSE 校內獎助請早送；可並申 Chevening（下一輪）</div></div><div class="row"><div class="k">學費</div><div>2027/28 海外生學費以課程頁為準（公開收費表曾列 £32,000）<span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>滾動招生，<b>滿額即止</b>，越早越好</div></div><div class="link">官網 → <a href="https://www.lse.ac.uk/study-at-lse/graduate/msc-media-and-communications-data-and-society" target="_blank" rel="noopener">www.lse.ac.uk/study-at-lse/graduate/msc-media-and-commun…</a></div></div><div class="card"><div class="school">牛津網際網路研究所 OII・英國</div><h3>MSc Social Science of the Internet</h3><div class="row"><div class="k">適合</div><div>任何學科一等學士；網路社會、監管與數位方法</div></div><div class="row"><div class="k">資助</div><div>須趕 1 月截止才能進入校級獎學金考量</div></div><div class="row"><div class="k">學費</div><div>海外生 £40,730／年（全日制）</div></div><div class="row"><div class="k">2027 截止</div><div>最後截止 <b>2027/1/7</b> 12:00 英國（台北 20:00）；第一輪 11/13 已過</div></div><div class="link">官網 → <a href="https://www.ox.ac.uk/admissions/graduate/courses/msc-social-science-of-the-internet" target="_blank" rel="noopener">www.ox.ac.uk/admissions/graduate/courses/msc-social-scie…</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 文組名校</span></div></section>
+<section class="slide " style="--c:var(--hum)" data-sec="文組名校"><div class="kicker">路線 2 ・ 文組名校</div><h2>文化與政策：KCL 與 UCL STEaPP</h2><div class="grid g2"><div class="card"><div class="school">倫敦國王學院 KCL・英國</div><h3>MA AI and Data in Culture and Society</h3><div class="row"><div class="k">適合</div><div>明訂收 2:1 的英文、藝術、人文或社會科學學士；含 Python 與法律模組</div></div><div class="row"><div class="k">資助</div><div>校內獎；Chevening（下一輪）</div></div><div class="row"><div class="k">學費</div><div>2027 學費未在課程頁讀到，請查官網 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>請查 KCL 課程頁 <span class="tbc">待確認</span>；申請費 £130</div></div><div class="link">官網 → <a href="https://www.kcl.ac.uk/study/postgraduate-taught/courses/ai-data-in-culture-and-society-ma" target="_blank" rel="noopener">www.kcl.ac.uk/study/postgraduate-taught/courses/ai-data-…</a></div></div><div class="card"><div class="school">倫敦大學學院 UCL STEaPP・英國</div><h3>MPA Digital Technologies and Policy</h3><div class="row"><div class="k">適合</div><div>數位科技與公共政策；政大公行、國關背景可切入</div></div><div class="row"><div class="k">資助</div><div>校內獎；Chevening（下一輪）</div></div><div class="row"><div class="k">學費</div><div>請查官網 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>請查官網 <span class="tbc">待確認</span></div></div><div class="link">官網 → <a href="https://www.ucl.ac.uk/study/prospective-students/graduate/courses/digital-technologies-and-policy-mpa" target="_blank" rel="noopener">www.ucl.ac.uk/study/prospective-students/graduate/course…</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 文組名校</span></div></section>
+<section class="slide " style="--c:var(--hum)" data-sec="文組名校"><div class="kicker">路線 2 ・ 文組名校</div><h2>政治學 × AI：柏林 Hertie 與荷蘭萊頓</h2><div class="grid g2"><div class="card"><div class="school">柏林 Hertie School・德國</div><h3>MDS：Data Science and AI for Public Policy</h3><div class="row"><div class="k">適合</div><div>公共政策＋資料科學；選拔有 30% 看數學、統計或程式經驗</div></div><div class="row"><div class="k">資助</div><div>校內<b>全額或部分</b>獎；非歐盟獎助優先輪 1/15</div></div><div class="row"><div class="k">學費</div><div>每學期 €9,500，另加保留金 €1,500（共四學期）</div></div><div class="row"><div class="k">2027 截止</div><div><span class="hot">早鳥</span>2026/12/1・非歐盟獎助優先 <b>2027/1/15</b>・最後 2027/5/1</div></div><div class="link">官網 → <a href="https://www.hertie-school.org/en/mds/admissions" target="_blank" rel="noopener">www.hertie-school.org/en/mds/admissions</a></div></div><div class="card"><div class="school">萊頓大學 Leiden・荷蘭</div><h3>MSc Politics of Artificial Intelligence</h3><div class="row"><div class="k">適合</div><div>政治學學群下的 AI 治理、監管與倫理；貼政大政治、外交</div></div><div class="row"><div class="k">資助</div><div>荷蘭 NL Scholarship 等，<b>非全額</b></div></div><div class="row"><div class="k">學費</div><div>非歐盟學費請查萊頓官網 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>請查官網 <span class="tbc">待確認</span></div></div><div class="link">官網 → <a href="https://www.universiteitleiden.nl/en/education/study-programmes/master/political-science/politics-of-ai/about-the-programme" target="_blank" rel="noopener">www.universiteitleiden.nl/en/education/study-programmes/…</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 文組名校</span></div></section>
+<section class="slide " style="--c:var(--hum)" data-sec="文組名校"><div class="kicker">路線 2 ・ 加碼</div><h2>AI 治理新課：牛津與劍橋（競爭高，但歡迎跨領域）</h2><div class="grid g2"><div class="card"><div class="school">牛津大學・英國</div><h3>MSc Law, Governance and AI（2027 新課）</h3><div class="row"><div class="k">適合</div><div>任何學科的一等或穩健二等上；偏好法律、治理或資料背景，含計算社會科學實作</div></div><div class="row"><div class="k">資助</div><div>無保證全額，須同時尋求校級獎學金</div></div><div class="row"><div class="k">學費</div><div>海外生 £52,630／年</div></div><div class="row"><div class="k">2027 截止</div><div><b>2027/1/27</b> 12:00 英國（台北 20:00）</div></div><div class="link">官網 → <a href="https://www.ox.ac.uk/admissions/graduate/courses/msc-law-governance-and-artificial-intelligence" target="_blank" rel="noopener">www.ox.ac.uk/admissions/graduate/courses/msc-law-governa…</a></div></div><div class="card"><div class="school">劍橋大學 LCFI・英國</div><h3>MPhil Ethics of AI, Data and Algorithms</h3><div class="row"><div class="k">適合</div><div>9 個月；歡迎跨領域背景的同儕</div></div><div class="row"><div class="k">資助</div><div>要競爭校內或 Gates 等獎助，須在 <span class="hot">12/8</span> 前送件</div></div><div class="row"><div class="k">學費</div><div>本次未讀到確數，請查官網 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>獎助截止 <b>2026/12/8</b>；課程截止 2027/2/28</div></div><div class="link">官網 → <a href="https://www.postgraduate.study.cam.ac.uk/courses/directory/phphmpead" target="_blank" rel="noopener">www.postgraduate.study.cam.ac.uk/courses/directory/phphm…</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 文組名校</span></div></section>
+<section class="slide divider" style="--c:var(--x)" data-sec="跨領域 AI"><div class="kicker">路線 3</div><div class="num">03</div><h1>跨領域 AI：科技與社會、AI × 商管</h1>
+<p>官方明說歡迎社會科學、人文、經濟或「任何學科」背景。德國、丹麥學費相對可控，CBS 還有校內全額獎。</p>
+<span class="pill">TUM RESET ・ TUM AI in Society ・ 愛丁堡 AI for Business ・ CBS ・ Tilburg</span><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 跨領域 AI</span></div></section>
+<section class="slide " style="--c:var(--x)" data-sec="跨領域 AI"><div class="kicker">路線 3 ・ 跨領域 AI</div><h2>慕尼黑工大 TUM：從 STS 到 AI 與社會</h2><div class="grid g2"><div class="card"><div class="school">慕尼黑工業大學 TUM・德國</div><h3>M.A. RESET（Responsibility in Science, Engineering and Technology）</h3><div class="row"><div class="k">適合</div><div>官方歡迎社會科學、人文、經濟等學士；科技與社會（STS）、責任與創新治理</div></div><div class="row"><div class="k">資助</div><div>DAAD、TUM 費用豁免；2027 年度 DAAD 這輪很可能已過</div></div><div class="row"><div class="k">學費</div><div>課程頁目前寫每學期 €4,000；TUM 已宣布 2027/28 冬季起調至 €4,600 或 €6,800 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div><b>2027/1/1 – 5/31</b></div></div><div class="link">官網 → <a href="https://www.tum.de/en/studies/degree-programs/detail/responsibility-in-science-engineering-and-technology-reset-master-of-arts-ma" target="_blank" rel="noopener">www.tum.de/en/studies/degree-programs/detail/responsibil…</a></div></div><div class="card"><div class="school">慕尼黑工業大學 TUM・德國</div><h3>M.Sc. AI in Society</h3><div class="row"><div class="k">適合</div><div>AI 與社會、法規與治理；課程含程式與機器學習，門檻高於 RESET</div></div><div class="row"><div class="k">資助</div><div>DAAD、TUM 費用豁免（同左）</div></div><div class="row"><div class="k">學費</div><div>課程頁目前寫每學期 €4,000；TUM 已宣布 2027/28 冬季起調至 €4,600 或 €6,800 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div><b>2027/1/1 – 5/31</b></div></div><div class="link">官網 → <a href="https://www.tum.de/en/studies/degree-programs/detail/ai-in-society" target="_blank" rel="noopener">www.tum.de/en/studies/degree-programs/detail/ai-in-society</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 跨領域 AI</span></div></section>
+<section class="slide " style="--c:var(--x)" data-sec="跨領域 AI"><div class="kicker">路線 3 ・ 跨領域 AI</div><h2>商管背景首選：愛丁堡、CBS、Tilburg</h2><div class="grid g3"><div class="card"><div class="school">愛丁堡大學商學院・英國</div><h3>MSc AI for Business</h3><div class="row"><div class="k">適合</div><div>任何學科 2:1；商管＋AI 應用，工作經驗非必備</div></div><div class="row"><div class="k">資助</div><div>校內獎；Chevening（下一輪）</div></div><div class="row"><div class="k">學費</div><div>國際／歐盟 £33,600／年</div></div><div class="row"><div class="k">2027 截止</div><div>分輪次，最後一輪 <b>2027/6/9</b>（宜早送）</div></div><div class="link">官網 → <a href="https://www.business-school.ed.ac.uk/msc/ai-business/fees-living-expenses" target="_blank" rel="noopener">www.business-school.ed.ac.uk/msc/ai-business/fees-living…</a></div></div><div class="card"><div class="school">哥本哈根商學院 CBS・丹麥</div><h3>MSc Business Administration and Data Science</h3><div class="row"><div class="k">適合</div><div>商管＋資料科學；學生分享不必先會寫程式，但第一學期很緊；須自我檢核學術條件</div></div><div class="row"><div class="k">資助</div><div>校內獎：<b>免學費＋每月 DKK 8,000</b>，須在同一截止申請</div></div><div class="row"><div class="k">學費</div><div>每學期 €8,000（每年 €16,000）</div></div><div class="row"><div class="k">2027 截止</div><div>需丹麥居留證者 <b>2027/1/15</b> 23:59 CET（台北 1/16 06:59）</div></div><div class="link">官網 → <a href="https://www.cbs.dk/en/study-programmes/master-programmes/msc-business-administration-and-data-science" target="_blank" rel="noopener">www.cbs.dk/en/study-programmes/master-programmes/msc-bus…</a></div></div><div class="card"><div class="school">Tilburg University・荷蘭</div><h3>MSc Data Science and Society</h3><div class="row"><div class="k">適合</div><div>Media、Business、Governance 等軌；統計不足可能要先修 pre-master</div></div><div class="row"><div class="k">資助</div><div>NL Scholarship 等，非全額</div></div><div class="row"><div class="k">學費</div><div>2026/27 非歐經區 €22,700；2027/28 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">2027 截止</div><div>請查 Tilburg 官網 <span class="tbc">待確認</span></div></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 跨領域 AI</span></div></section>
+<section class="slide divider" style="--c:var(--jp)" data-sec="日本"><div class="kicker">日本</div><div class="num">04</div><h1>日本：人間社會情報<br>・情報學環・文理融合</h1>
+<p>日文系可同時考慮<b>日語授課</b>（研究計畫書、筆記、口試）與<b>英語學程</b>（ITASIA、慶應 KMD、筑波英語考生特別選拔）。多數研究科要求出願前先取得希望教員的內諾，至少要先聯絡。</p>
+<span class="pill">國立大學標準額：學費年額 535,800 日圓・入學金 282,000 日圓（各校最多可上調兩成）</span><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 日本</span></div></section>
+<section class="slide " style="--c:var(--jp)" data-sec="日本"><div class="kicker">日本 ・ 最急</div><h2>東京大學：ITASIA 與學際情報學府（12 月第一週截止）</h2><div class="grid g3"><div class="card"><div class="school">東京大學 學際情報學府・英語學位</div><h3>ITASIA（Information, Technology, and Society in Asia）</h3><div class="row"><div class="k">適合</div><div>亞洲的資訊、科技與社會；適合想用英語讀資訊社會的日文系學生</div></div><div class="row"><div class="k">入試</div><div>全英語。GRE 全員必繳；TOEFL iBT 或 IELTS；兩封學術推薦信；英文研究寫作樣本</div></div><div class="row"><div class="k">窗口</div><div><span class="hot">最急</span>2027 秋季入學，截止 <b>2026/12/2</b> 12:00 日本時間</div></div><div class="row"><div class="k">學費</div><div>國立標準額</div></div><div class="link">官網 → <a href="https://itasia.iii.u-tokyo.ac.jp/admissions" target="_blank" rel="noopener">itasia.iii.u-tokyo.ac.jp/admissions</a></div></div><div class="card"><div class="school">東京大學 學際情報學府（III）</div><h3>社會情報學課程（Socio-information Studies）</h3><div class="row"><div class="k">適合</div><div>文理融合的資訊學：社會資訊、傳播與資訊社會；明確歡迎跨領域</div></div><div class="row"><div class="k">入試</div><div>日語為主。一次：英語成績＋文件＋專業筆記；二次：線上口試</div></div><div class="row"><div class="k">窗口</div><div><span class="hot">急</span>冬季募集 <b>12/1–12/4</b>（12/4 12:00 日本時間前上傳）；口試 1/29 或 1/30；夏冬合計約 16 名</div></div><div class="row"><div class="k">學費</div><div>國立標準額</div></div><div class="link">官網 → <a href="https://www.iii.u-tokyo.ac.jp/" target="_blank" rel="noopener">www.iii.u-tokyo.ac.jp</a></div></div><div class="card"><div class="school">東京大學 學際情報學府（III）</div><h3>文化・人間情報學課程</h3><div class="row"><div class="k">適合</div><div>文化、媒體與人類資訊；適合人文背景</div></div><div class="row"><div class="k">入試</div><div>日語為主。英語成績＋文件＋口試；夏季不考專業筆記，冬季請再對要項 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">窗口</div><div><span class="hot">急</span>同一冬季窗口 <b>12/1–12/4</b>；夏冬合計約 15 名</div></div><div class="row"><div class="k">學費</div><div>國立標準額</div></div><div class="link">官網 → <a href="https://www.iii.u-tokyo.ac.jp/" target="_blank" rel="noopener">www.iii.u-tokyo.ac.jp</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 日本</span></div></section>
+<section class="slide " style="--c:var(--jp)" data-sec="日本"><div class="kicker">日本 ・ 12 月～1 月出願</div><h2>東北・京大・名大：社會情報學的三種樣貌</h2><div class="grid g3"><div class="card"><div class="school">東北大學 情報科學研究科</div><h3>人間社會情報科學專攻（GSIS）</h3><div class="row"><div class="k">適合</div><div>語言・媒體、心理・哲學、社會科學等群，研究媒體、語言與社會中的資訊現象；很適合文組</div></div><div class="row"><div class="k">入試</div><div>日語為主。先聯絡希望研究室；繳 TOEFL iBT 或 TOEIC L&R（兩年內）；筆試＋口試（部分群不考筆試）</div></div><div class="row"><div class="k">窗口</div><div>TAO 出願 <b>2026/12/24 9:00 – 2027/1/8 16:00</b>（日本時間）；考試 1/30–31</div></div><div class="row"><div class="k">學費</div><div>國立標準額</div></div><div class="link">官網 → <a href="https://www.is.tohoku.ac.jp/jp/" target="_blank" rel="noopener">www.is.tohoku.ac.jp/jp</a></div></div><div class="card"><div class="school">京都大學 情報學研究科</div><h3>社會情報學課程（Social Informatics）</h3><div class="row"><div class="k">適合</div><div>人機互動、人間中心 AI、防災傳播、醫療資訊、NLP；部分志望區偏技術</div></div><div class="row"><div class="k">入試</div><div>筆記（資訊學基礎＋專業）可用日語或英語作答；志望說明書；口試 5 分鐘簡報；外國學歷先經京大 AAO 驗證</div></div><div class="row"><div class="k">窗口</div><div>WEB 出願 <b>12/9–12/22 17:00</b>；考試 2027/2/8–9。資訊學基礎出自指定計算機科學入門教科書，文組要預留準備時間</div></div><div class="row"><div class="k">學費</div><div>國立標準額；檢定料 30,000 日圓</div></div><div class="link">官網 → <a href="https://www.i.kyoto-u.ac.jp/admission/application" target="_blank" rel="noopener">www.i.kyoto-u.ac.jp/admission/application</a></div></div><div class="card"><div class="school">名古屋大學 情報學研究科</div><h3>社會情報學專攻（Social Informatics）</h3><div class="row"><div class="k">適合</div><div>資訊與社會、媒體、科學傳播與制度設計；另有心理・認知科學專攻</div></div><div class="row"><div class="k">入試</div><div>日語為主。TOEIC L&R／TOEFL iBT／IELTS／Duolingo；筆試＋口試（部分可申請免筆試）；先聯絡教員</div></div><div class="row"><div class="k">窗口</div><div>網登與檢定料 <b>12/2–12/21</b>；書類 12/16–<b>12/22</b> 16:00；考試 2027/2/9（或 2/10）</div></div><div class="row"><div class="k">學費</div><div>國立標準額</div></div><div class="link">官網 → <a href="https://www.i.nagoya-u.ac.jp/gs/entranceexamination/" target="_blank" rel="noopener">www.i.nagoya-u.ac.jp/gs/entranceexamination</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 日本</span></div></section>
+<section class="slide " style="--c:var(--jp)" data-sec="日本"><div class="kicker">日本 ・ 英語也能考</div><h2>筑波・慶應 KMD・慶應 SFC</h2><div class="grid g3"><div class="card"><div class="school">筑波大學 人間綜合科學學術院</div><h3>情報學學位課程（Informatics）</h3><div class="row"><div class="k">適合</div><div>資訊學、圖書情報與媒體（含原圖書情報媒體領域），跨人文與資訊</div></div><div class="row"><div class="k">入試</div><div>日語課程為主，冬季另有<b>英語考生特別選拔</b>；線上考試：研究說明資料＋口試</div></div><div class="row"><div class="k">窗口</div><div><span class="hot">進行中</span>出願 <b>11/30–12/10</b>；考試 2027/1/26 或 1/27；冬季前期 15 名</div></div><div class="row"><div class="k">學費</div><div>國立標準額</div></div><div class="link">官網 → <a href="https://informatics.tsukuba.ac.jp/admission-information/admission/examination/" target="_blank" rel="noopener">informatics.tsukuba.ac.jp/admission-information/admissio…</a></div></div><div class="card"><div class="school">慶應義塾大學・私立</div><h3>媒體設計研究科 KMD（Media Design）</h3><div class="row"><div class="k">適合</div><div>媒體設計、創意與科技；背景較開放</div></div><div class="row"><div class="k">入試</div><div>碩士課程<b>英語授課、不要求日語</b>；書類選考後英語口試</div></div><div class="row"><div class="k">窗口</div><div><span class="hot">急</span>第 III 期出願 <b>12/2 13:00 – 12/10 23:59</b>（日本時間）；口試 1/30–31</div></div><div class="row"><div class="k">學費</div><div>公開頁面曾列 2027 年 4 月入學年額約 1,992,600 日圓 <span class="tbc">待確認</span></div></div><div class="link">官網 → <a href="https://www.kmd.keio.ac.jp/admissions/masters-program/" target="_blank" rel="noopener">www.kmd.keio.ac.jp/admissions/masters-program</a></div></div><div class="card"><div class="school">慶應義塾大學・私立</div><h3>政策・媒體研究科（SFC, Media and Governance）</h3><div class="row"><div class="k">適合</div><div>政策、媒體、社會與資訊的文理融合，適合跨領域</div></div><div class="row"><div class="k">入試</div><div>日語為主。研究計畫書、志望理由書，先取得教員指導引受；書類＋面接</div></div><div class="row"><div class="k">窗口</div><div><span class="closed">已截止</span> 第 II 期 2026/10/7；是否還有後期 <span class="tbc">待確認</span></div></div><div class="row"><div class="k">學費</div><div>2026 年度入學者年額約 1,650,600 日圓（無入學金）；2027 <span class="tbc">待確認</span></div></div><div class="link">官網 → <a href="https://www.keio.ac.jp/ja/admissions/grad/master/gsmg/" target="_blank" rel="noopener">www.keio.ac.jp/ja/admissions/grad/master/gsmg</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 日本</span></div></section>
+<section class="slide " style="--c:var(--jp)" data-sec="日本"><div class="kicker">日本 ・ 2028 備案</div><h2>2027 輪已截止，但值得放進 2028 計畫的四所</h2><div class="grid g2 tight" style="grid-template-rows:1fr 1fr"><div class="card"><div class="school">國立・社會科學＋資料科學</div><h3>一橋大學 社會資料科學研究科（SDS）</h3><div class="row"><div class="k">適合</div><div>商管、社科想補資料能力；選拔看數量方法</div></div><div class="row"><div class="k">入試</div><div>外國人特別選考須 TOEFL iBT 或 IELTS；筆試＋口試</div></div><div class="row"><div class="k">狀態</div><div><span class="closed">已截止</span> 2027 外國人特別選考 7/27–8/3 出願，這輪已結束</div></div><div class="link">官網 → <a href="https://www.sds.hit-u.ac.jp/admission/master/" target="_blank" rel="noopener">www.sds.hit-u.ac.jp/admission/master</a></div></div><div class="card"><div class="school">國立・環境・社會理工學院</div><h3>東京科學大學（舊東工大）社會・人間科學課程</h3><div class="row"><div class="k">適合</div><div>科學技術社會（STS）、倫理、政策與傳播，從人文社會看科技與 AI</div></div><div class="row"><div class="k">入試</div><div>日語為主，須英語外部考試成績</div></div><div class="row"><div class="k">狀態</div><div><span class="closed">已截止</span> 2027 年 4 月主要出願（2026 年 6 月）已結束；看 9 月或 2028 年 4 月</div></div><div class="link">官網 → <a href="https://admissions.isct.ac.jp/" target="_blank" rel="noopener">admissions.isct.ac.jp</a></div></div><div class="card"><div class="school">國立・日本較早的獨立 DS 研究科</div><h3>滋賀大學 資料科學研究科</h3><div class="row"><div class="k">適合</div><div>對商管有吸引力，但須有一定數量或資訊基礎；另有成績優秀者校內獎</div></div><div class="row"><div class="k">入試</div><div>TOEIC L&R 或 TOEFL iBT、志願理由書、研究計畫書</div></div><div class="row"><div class="k">狀態</div><div><span class="closed">已截止</span> 2027 出願 11/2–6 已結束（第二次選考 12/5）</div></div><div class="link">官網 → <a href="https://www.shiga-u.ac.jp/admission/examination_info/exam_dsresearch/exam_dsresearch_master/" target="_blank" rel="noopener">www.shiga-u.ac.jp/admission/examination_info/exam_dsrese…</a></div></div><div class="card"><div class="school">國立・人間科學</div><h3>大阪大學 人間科學研究科（ELSI 相關教員）</h3><div class="row"><div class="k">適合</div><div>科技倫理、法律與社會課題（ELSI）；ELSI 中心本身不是獨立碩士學程</div></div><div class="row"><div class="k">入試</div><div>日語為主，一般入試，須事前聯絡指導預定教員</div></div><div class="row"><div class="k">狀態</div><div><span class="closed">已截止</span> 秋期 7/21–23、冬期 11/16–18 均已結束</div></div><div class="link">官網 → <a href="http://www.hus.osaka-u.ac.jp/ja/applicants_for_graduate/admission.html" target="_blank" rel="noopener">www.hus.osaka-u.ac.jp/ja/applicants_for_graduate/admissi…</a></div></div></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 日本</span></div></section>
+<section class="slide " style="--c:var(--sch)" data-sec="獎學金"><div class="kicker">獎學金 ・ 歐洲</div><h2>台灣學生可申的歐洲獎學金一覽</h2>
+<div class="tablewrap"><table><tr><th>獎學金</th><th>給什麼</th><th>怎麼申／2027 時程</th></tr>
+<tr><td>Erasmus Mundus 全額獎</td><td>免學費＋每月 €1,400、最長 24 個月＋保險</td><td>跟著各聯合碩士申請：AISS 2/2、EMILDAI 1/17、Mundus Journalism 1/10、MULTICOM 2/12 <span class="tbc">待確認</span>；EMAI 2027 不發</td></tr>
+<tr><td>法國 Eiffel</td><td>碩士每月 €1,200；公立校國家文憑可免學費</td><td>學生不能自己申，須<b>由法國大學提報</b>。機構截止 <b>2027/1/6</b>，校內更早，現在就要聯絡學校</td></tr>
+<tr><td>教育部歐盟獎學金</td><td>115 年簡章：每年 US$16,000、至多 2 年、約 20 名</td><td>限 EMJM 備取或自費生；正取 EM 獎者、已有碩博士者不得申。116 年簡章未公告，例年約 5–6 月</td></tr>
+<tr><td>英國 Chevening（台灣）</td><td>一年制英國碩士</td><td>2027–28 已結束；下一輪例年約 8 月開放（2028 入學）</td></tr>
+<tr><td>德國 DAAD</td><td>每月 €992＋保險、旅費、每年 €460；不含學費</td><td>官網 11/24 顯示 2027 年度無法申請，此輪很可能已過；看 2028</td></tr>
+<tr><td>各校校內獎</td><td>CBS 免學費＋DKK 8,000／月；Hertie 全額或部分；TUM 費用豁免</td><td>LSE、Sciences Po、愛丁堡也都有，<b>通常要跟入學同一截止</b>；荷蘭 NL Scholarship 多為第一年一次 €5,000</td></tr>
+<tr class="dim"><td>注意／不適用</td><td colspan="2">瑞典 SISGP 國籍清單<b>不含台灣</b>；匈牙利 Stipendium Hungaricum 生活費僅約 €110／月，2027/28 是否開放台灣 <span class="tbc">待確認</span>；Fulbright Taiwan 以赴美為主；教育部公費留學有指定領域與服務年限</td></tr>
+</table></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 獎學金</span></div></section>
+<section class="slide " style="--c:var(--sch)" data-sec="獎學金"><div class="kicker">獎學金 ・ 日本</div><h2>日本獎學金：2027 年大多已截止，先卡位 2028</h2>
+<div class="grid g3">
+<div class="box"><h3>文部科學省國費（研究留學生）</h3><p class="small">台灣的大使館推薦由<b>日本台灣交流協會</b>辦理。2027 年度現地合格者已公告，台灣現地申請多半已結束。下一輪（多為 2028 入學）盯 <b>2027 年春季</b>公告；大學推薦時程因校而異。</p></div>
+<div class="box"><h3>交流協會日本獎學金</h3><p class="small"><b>現地採用</b>（在台申請）：2027 年度已結束。<br><b>國內採用</b>（已在日本、未滿 35 歲）：碩士月額 144,000 日圓（預定），學費通常以 535,800 日圓為上限；2027 年度已於 10/23 截止。</p></div>
+<div class="box"><h3>JASSO 學習獎勵費</h3><p class="small">私費正規留學生<b>入學後</b>經學校推薦。月額 48,000 日圓，原則 4 月至隔年 3 月一年，或 10 月至 3 月半年。不是出國前的全額獎。</p></div>
+<div class="box"><h3>民間財團</h3><p class="small">扶輪米山記念：碩士月額 140,000 日圓（指定校推薦）；伊藤國際教育交流財團、平和中島財團等。2027 年 4 月採用多在 2026 年 10 月截止，已過；2028 從 2027 夏天起盯。</p></div>
+<div class="box"><h3>校內獎</h3><p class="small">例如滋賀大學資料科學研究科有成績優秀者校內獎。其他各校請入學前後查詢。</p></div>
+<div class="box"><h3>台灣教育部公費留學</h3><p class="small">有指定領域與服務年限，須看當年簡章（scholarship.moe.gov.tw）。</p></div>
+</div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 獎學金</span></div></section>
+<section class="slide " data-sec="時程"><div class="kicker" style="--c:var(--jp)">申請時程</div><h2>2026/12 → 2027/2：照時間排好的截止日</h2>
+<div class="tl"><div class="col"><h3>2026 年 12 月</h3><div class="ev"><div class="d">11/30–12/10</div><div><span class="t jp">日本</span>筑波 情報學（含英語特別選拔）</div></div><div class="ev"><div class="d">12/1</div><div><span class="t hum">文組</span>Hertie MDS 早鳥</div></div><div class="ev u"><div class="d">12/1–12/4</div><div><span class="t jp">日本</span>東大 學際情報學府 冬季（12/4 12:00 JST）</div></div><div class="ev u"><div class="d">12/2</div><div><span class="t jp">日本</span>東大 ITASIA 12:00 JST（台北 11:00）</div></div><div class="ev"><div class="d">12/2–12/10</div><div><span class="t jp">日本</span>慶應 KMD 第 III 期</div></div><div class="ev"><div class="d">12/2</div><div><span class="t eu">EU</span>AISS 開放申請</div></div><div class="ev u"><div class="d">12/8</div><div><span class="t hum">文組</span>劍橋 Ethics of AI 獎助截止</div></div><div class="ev"><div class="d">12/9–12/22</div><div><span class="t jp">日本</span>京大 社會情報學 WEB 出願</div></div><div class="ev"><div class="d">12/22</div><div><span class="t jp">日本</span>名大 書類截止 16:00</div></div><div class="ev"><div class="d">12/24–1/8</div><div><span class="t jp">日本</span>東北 GSIS TAO 出願</div></div></div><div class="col"><h3>2027 年 1 月</h3><div class="ev u"><div class="d">1/6</div><div><span class="t sch">獎</span>Eiffel 機構截止（校內更早！）</div></div><div class="ev"><div class="d">1/7</div><div><span class="t hum">文組</span>牛津 OII 最後截止（台北 20:00）</div></div><div class="ev"><div class="d">1/10</div><div><span class="t eu">EU</span>Mundus Journalism（台北 20:00）</div></div><div class="ev"><div class="d">1/15</div><div><span class="t x">跨域</span>CBS（台北 1/16 06:59）</div></div><div class="ev"><div class="d">1/15</div><div><span class="t hum">文組</span>Hertie 非歐盟獎助優先</div></div><div class="ev"><div class="d">1/17</div><div><span class="t eu">EU</span>EMILDAI 獎學金輪</div></div><div class="ev"><div class="d">1/27</div><div><span class="t hum">文組</span>牛津 Law, Governance and AI（台北 20:00）</div></div></div><div class="col"><h3>2027 年 2 月以後</h3><div class="ev"><div class="d">2/2</div><div><span class="t eu">EU</span>AISS 截止</div></div><div class="ev"><div class="d">2/12</div><div><span class="t eu">EU</span>MULTICOM <span class="tbc">待確認</span></div></div><div class="ev"><div class="d">2/21</div><div><span class="t hum">文組</span>Sciences Po（台北 2/22 06:59）</div></div><div class="ev"><div class="d">2/28</div><div><span class="t hum">文組</span>劍橋 Ethics of AI 課程截止</div></div><div class="ev"><div class="d" style="color:#64748b">之後</div><div class="mute">Hertie 5/1・TUM RESET／AI in Society 5/31・愛丁堡 6/9・SOAS 約 7/31・116 年教育部歐盟獎學金簡章約 5–6 月</div></div></div></div>
+<div class="legend"><span><span class="hot">紅底</span>＝最急（兩週內，或校內截止更早）</span><span>JST＝日本時間（比台北快 1 小時）</span><span>未註記時區者依各校公告時區</span><span>今天：2026/11/24</span></div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 時程</span></div></section>
+<section class="slide " data-sec="怎麼挑"><div class="kicker">怎麼挑</div><h2>依你的科系背景，先看這幾個</h2>
+<div class="grid g4">
+<div class="box" style="border-top:8px solid var(--eu)"><h3>語文（日文、英文、外語）</h3><ul><li>MULTICOM：語言、認知與 AI</li><li>KCL AI and Data in Culture and Society</li><li>東北 GSIS 語言・媒體群</li><li>東大 文化・人間情報學</li><li>東大 ITASIA、慶應 KMD（英語）</li><li>筑波 情報學</li></ul></div>
+<div class="box" style="border-top:8px solid var(--hum)"><h3>政治、外交、公行、法律</h3><ul><li>Sciences Po 數位政策</li><li>萊頓 Politics of AI</li><li>UCL STEaPP</li><li>EMILDAI（先確認學歷）</li><li>牛津 Law, Governance and AI</li><li>TUM RESET</li><li>Hertie MDS（要數理經驗）</li></ul></div>
+<div class="box" style="border-top:8px solid var(--x)"><h3>商管、經濟、金融</h3><ul><li>愛丁堡 AI for Business</li><li>CBS BA & Data Science</li><li>Tilburg（Business 軌）</li><li>TUM AI in Society（要程式）</li><li>2028：一橋 SDS、滋賀 DS</li></ul></div>
+<div class="box" style="border-top:8px solid var(--jp)"><h3>傳播、新聞、社會、民族</h3><ul><li>Mundus Journalism</li><li>LSE Data and Society</li><li>牛津 OII</li><li>AISS、SOAS（AI × 永續）</li><li>東大 社會情報學</li><li>名大、京大 社會情報學</li></ul></div>
+</div>
+<div class="note" style="--c:var(--sch)">要全額獎：優先 Erasmus Mundus（AISS、EMILDAI、Mundus Journalism、MULTICOM）、CBS 校內獎、Eiffel＋法國學程。預算有限：日本國立大學（年額 535,800 日圓）、AISS 自費（兩年 €8,000）學費相對低。</div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 怎麼挑</span></div></section>
+<section class="slide " style="--c:var(--x)" data-sec="行動"><div class="kicker" style="--c:var(--x)">行動清單</div><h2>回家就能做的事</h2>
+<div class="grid g2">
+<div class="box" style="--c:var(--jp)"><h3>這兩週（11/24–12/8）</h3><ul class="ck">
+<li>想申東大：ITASIA 12/2、學際情報學府 12/1–4，立刻準備文件</li>
+<li>想走 Eiffel：馬上寫信給目標法國學校，問校內提報截止</li>
+<li>想申日本研究所：寫信聯絡希望教員，爭取內諾</li>
+<li>劍橋 Ethics of AI 要拿獎助：12/8 前送件</li>
+<li>EMILDAI：寄信 info-emildai@dcu.ie 確認學歷是否符合</li>
+</ul></div>
+<div class="box" style="--c:var(--eu)"><h3>12 月到 2 月</h3><ul class="ck">
+<li>英文成績：IELTS（英國常要 7.0）／TOEFL；ITASIA 還要 GRE</li>
+<li>兩至三封推薦信：現在就找老師</li>
+<li>動機信／研究計畫書：把專案、實習、語言能力寫進 AI 脈絡</li>
+<li>京大：先申請 AAO 學歷驗證；文組預讀計算機科學入門教科書</li>
+<li>校內獎學金通常和入學同一截止，不要分開拖</li>
+<li>2028 卡位：MEXT（2027 春）、Chevening（約 8 月）、DAAD、116 年教育部歐盟獎學金（約 5–6 月）</li>
+</ul></div>
+</div><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 行動</span></div></section>
+<section class="slide dark title-slide" data-sec="結語"><div class="kicker" style="--c:#93c5fd">結語</div><h1>文組讀 AI，<br>不是轉行，而是把 AI 放進你的專業</h1>
+<div class="sub">AI 治理、AI × 媒體、AI × 商管、資訊社會，正是政大學生最有優勢的位置。</div>
+<div class="presenter"><div class="av">何</div><div><b>何則文</b><span>政大日文系 ・ AI／數位創新專案</span></div></div>
+<p class="mute small" style="margin-top:40px;max-width:1300px">資料來源：各學程與獎學金官方網站（每張卡片附連結）、Erasmus Mundus 官方目錄 eacea.ec.europa.eu、EU AI Factories（digital-strategy.ec.europa.eu）、GOV.UK Graduate visa、教育部獎學金網、日本台灣交流協會、JASSO、文部科學省。<br>查證日期：2026 年 11 月 24 日（台北時間）。學費、截止與名額都可能變更，<b>送件前請再對一次官網</b>；標示「待確認」者尤其要再查。</p><div class="foot"><span>歐洲與日本 AI 碩士 × 獎學金 ・ 結語</span></div></section>
+</div></div>
+<div id="hud"><button id="prev" aria-label="上一張">‹</button><span id="count">1 / 28</span><button id="next" aria-label="下一張">›</button><button id="fs" aria-label="全螢幕">⛶</button></div>
+<script>(function(){
+var slides=[].slice.call(document.querySelectorAll('.slide')),N=slides.length,i=0;
+var stage=document.getElementById('stage'),bar=document.getElementById('bar'),count=document.getElementById('count'),root=document.documentElement;
+function layout(){
+  var w=window.innerWidth,h=window.innerHeight;
+  var mobile=(w<820&&h>w)||w<560;
+  root.classList.toggle('m',mobile);
+  if(!mobile){var s=Math.min(w/1600,h/900);stage.style.transform='scale('+s+')';}
+}
+function go(n,noHash){
+  n=Math.max(0,Math.min(N-1,n));
+  slides[i].classList.remove('active');i=n;slides[i].classList.add('active');slides[i].scrollTop=0;
+  bar.style.width=((i+1)/N*100)+'%';count.textContent=(i+1)+' / '+N;
+  if(!noHash&&history.replaceState)history.replaceState(null,'','#'+(i+1));
+}
+function next(){go(i+1)}function prev(){go(i-1)}
+document.addEventListener('keydown',function(e){
+  if(e.metaKey||e.ctrlKey||e.altKey)return;
+  var k=e.key;
+  if(k==='ArrowRight'||k==='PageDown'||k===' '||k==='Enter'||k==='ArrowDown'&&!root.classList.contains('m')){e.preventDefault();next();}
+  else if(k==='ArrowLeft'||k==='PageUp'||k==='Backspace'||k==='ArrowUp'&&!root.classList.contains('m')){e.preventDefault();prev();}
+  else if(k==='Home'){go(0)}else if(k==='End'){go(N-1)}
+  else if(k==='f'||k==='F'){toggleFs()}
+});
+document.getElementById('next').onclick=function(e){e.stopPropagation();next()};
+document.getElementById('prev').onclick=function(e){e.stopPropagation();prev()};
+function toggleFs(){var d=document;if(!d.fullscreenElement){(root.requestFullscreen||root.webkitRequestFullscreen||function(){}).call(root)}else{(d.exitFullscreen||d.webkitExitFullscreen).call(d)}}
+document.getElementById('fs').onclick=function(e){e.stopPropagation();toggleFs()};
+var x0=null,y0=null,t0=0,moved=false;
+document.addEventListener('touchstart',function(e){var t=e.touches[0];x0=t.clientX;y0=t.clientY;t0=Date.now();moved=false},{passive:true});
+document.addEventListener('touchmove',function(){moved=true},{passive:true});
+document.addEventListener('touchend',function(e){
+  if(x0===null)return;var t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
+  if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.3){dx<0?next():prev();}
+},{passive:true});
+document.getElementById('viewport').addEventListener('click',function(e){
+  if(e.target.closest('a,button,table'))return;
+  if(window.getSelection&&String(window.getSelection()).length)return;
+  var w=window.innerWidth,x=e.clientX;
+  if(x>w*0.7)next();else if(x<w*0.3)prev();
+});
+window.addEventListener('resize',layout);
+window.addEventListener('hashchange',function(){var n=parseInt(location.hash.slice(1),10);if(n)go(n-1,true)});
+layout();var h=parseInt(location.hash.slice(1),10);go(h?h-1:0,true);
+})();
+</script></body></html>
