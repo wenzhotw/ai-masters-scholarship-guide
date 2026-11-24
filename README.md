@@ -1,6 +1,6 @@
 # 文組也能讀 AI 碩士：歐洲與日本 AI 相關碩士 × 獎學金
 
-政大獎學金工作坊簡報｜Wenz Ho
+政大資訊學院人工智慧應用學士學位學程・獎學金工作坊簡報｜Wenz Ho
 
 👉 線上簡報：https://wenzhotw.github.io/ai-masters-scholarship-guide/
 
